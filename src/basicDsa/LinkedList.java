@@ -16,7 +16,7 @@ class Node
 
 public class LinkedList {
 	
-	static Node head = null;
+	static Node head;
 	
 	public static void addNode(int data)
 	{
@@ -50,7 +50,7 @@ public class LinkedList {
 	public static void main(String[] args) {
 		
 		LinkedList list = new LinkedList();
-		
+		list.head = null;
 		list.addNode(1);
 		list.addNode(2);
 		list.addNode(3);
@@ -58,9 +58,7 @@ public class LinkedList {
 		list.addNode(5);
 		
 		list.printList(list);
-		
-		
-		
+
 		
 	}
 
