@@ -2,10 +2,12 @@ package basicDsa;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Assignment2 {
 
@@ -51,6 +53,16 @@ public class Assignment2 {
 		{
 			System.out.println(entry.getKey()+" "+entry.getValue());
 		}
+		
+		
+		List<String> fruits = Arrays.asList("Apple","Banana","Orange");
+		
+		Stream<String> stream = fruits.stream().map(f -> f.toUpperCase());
+		stream.forEach(System.out::println);
+		stream.forEach(System.out::println);
+		
+		
+		
 	}
 
 }
